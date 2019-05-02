@@ -1,8 +1,9 @@
 import * as React from "react";
 import styles from "./bookCard.module.scss";
+import { IBook } from "../../reducers/bookReducer";
 
 export interface IProps {
-  author: string;
+  book: IBook;
 }
 
 export interface IState {}
@@ -13,14 +14,14 @@ class BookCard extends React.Component<IProps, IState> {
     return (
       <div className={styles.card}>
         <img
-          src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff96014e4-671b-11e7-9755-334d14a02d15.jpg?crop=2156%2C1213%2C147%2C489&resize=685"
+          src={this.props.book.volumeInfo.imageLinks.thumbnail}
           className={styles.picture}
         />{" "}
         <div className={styles.details}>
           <ul>
-            <li>Author: {this.props.author}</li>
+            <li>Title: {this.props.book.volumeInfo.title}</li>
             <li>Age: "</li>
-            <li>Number of pages: "</li>
+            <li>Number of pages: {this.props.book.volumeInfo.pageCount}</li>
             <li>Synopsis: "</li>
             <li>Page Number: "</li>
           </ul>
