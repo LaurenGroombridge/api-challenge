@@ -20,10 +20,10 @@ class BookCard extends React.Component<IProps, IState> {
         <div className={styles.details}>
           <ul>
             <li>Title: {this.props.book.volumeInfo.title}</li>
-            <li>Age: "</li>
+            <li>Age: {this.props.book.volumeInfo.publishedDate}</li>
             <li>Number of pages: {this.props.book.volumeInfo.pageCount}</li>
-            <li>Synopsis: "</li>
-            <li>Page Number: "</li>
+            <li>Synopsis: {this.props.book.volumeInfo.description}</li>
+            <li>Page Number: {this.props.book.volumeInfo.pageCount}</li>
           </ul>
         </div>
       </div>
