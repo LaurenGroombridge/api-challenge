@@ -1,7 +1,9 @@
 import * as React from "react";
 import styles from "./bookCard.module.scss";
 
-export interface IProps {}
+export interface IProps {
+  author: string;
+}
 
 export interface IState {}
 
@@ -16,7 +18,7 @@ class BookCard extends React.Component<IProps, IState> {
         />{" "}
         <div className={styles.details}>
           <ul>
-            <li>Author: "</li>
+            <li>Author: {this.props.author}</li>
             <li>Age: "</li>
             <li>Number of pages: "</li>
             <li>Synopsis: "</li>

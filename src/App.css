@@ -1,8 +1,4 @@
-* {
-  background-color: plum;
-}
-
-h2 {
+h1 {
   color: black;
   font-family: monospace;
   text-align: center;
@@ -15,7 +11,17 @@ h2 {
   justify-content: space-between;
 }
 
-.searchBar {
-  align-items: center;
-  display: flex;
+.searchBar input[type="text"] {
+  border-color: black;
+  border-radius: 7px;
+  padding: 5px;
+  left: 45%;
+  position: absolute;
+  background-color: white;
+}
+
+h1 {
+  background-image: url("https://www.britishcouncil.org/sites/default/files/janko-ferlic-174927_1920x1080.jpg");
+  height: 200px;
+  margin-top: 0;
 }

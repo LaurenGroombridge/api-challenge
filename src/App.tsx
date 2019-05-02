@@ -10,16 +10,15 @@ class App extends Component {
     return (
       <Provider store={store}>
         <header className="App-header">
-          <h2>My Library placeholder</h2>
+          <h1>My Library placeholder</h1>
         </header>
         <div className="searchBar">
-          {" "}
           <input type="text" placeholder="Search.." />
         </div>
         <div className="App">
-          <BookCard />
-          <BookCard />
-          <BookCard />
+          <BookCard author={"Jane Austen"} />
+          {/* <BookCard />
+          <BookCard /> */}
         </div>
       </Provider>
     );
