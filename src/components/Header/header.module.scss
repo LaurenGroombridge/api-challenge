@@ -1,3 +1,16 @@
-h1 {
-  background-color: pink;
+$base-padding: 5px;
+$primary-color: #f442b6;
+
+.header {
+  background-color: $primary-color;
+  padding: $base-padding;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  text-align: center;
+  h1 {
+    color: white;
+    font-size: 32px;
+    padding: $base-padding;
+  }
 }

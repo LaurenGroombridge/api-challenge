@@ -10,7 +10,7 @@ class Header extends React.Component<IProps, IState> {
   public render() {
     return (
       <header className={styles.header}>
-        <h1>hello</h1>
+        <h1>My Library</h1>
       </header>
     );
   }
