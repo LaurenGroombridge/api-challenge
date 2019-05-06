@@ -1,18 +1,14 @@
-import * as React from 'react';
+import * as React from "react";
 
-export interface IProps {
-    
-}
- 
-export interface IState {
-    
-}
- 
+export interface IProps {}
+
+export interface IState {}
+
 class BookContainer extends React.Component<IProps, IState> {
-    // state = { :  }
-    render() { 
-        return (  );
-    }
+  // state = { :  }
+  public render() {
+    return <p>uyeduygsweuy</p>;
+  }
 }
- 
+
 export default BookContainer;
